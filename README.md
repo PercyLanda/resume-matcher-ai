@@ -1,200 +1,117 @@
-```markdown
 # Resume Matcher AI
 
-An AI-powered application that compares resumes against job descriptions to evaluate alignment and match strength. This project uses Natural Language Processing (NLP) techniques to help job seekers tailor applications and improve targeting through similarity scoring and keyword analysis.
+Resume Matcher AI is a Natural Language Processing (NLP) application that evaluates the alignment between a resume and a job description using vector space modeling and cosine similarity. The system converts unstructured text into numerical representations using TF-IDF vectorization and computes similarity scores to quantify candidate–role alignment.
+
+This project demonstrates applied NLP, feature engineering, and similarity modeling in a practical hiring-context use case.
 
 ---
 
-## 🚀 Overview
+## Problem Statement
 
-Resume Matcher AI analyzes a resume and a job description, then computes a similarity score using TF-IDF vectorization and cosine similarity. It highlights relevant keyword overlap and provides a match percentage.
+Job seekers often lack objective feedback on how closely their resumes align with specific roles. Applicant Tracking Systems (ATS) and recruiters frequently rely on keyword relevance and contextual alignment when screening candidates.
 
-This project demonstrates practical NLP, feature engineering, and applied machine learning techniques in a real-world use case.
-
----
-
-## ✨ Features
-
-- Resume text extraction and processing
-- Job description parsing
-- TF-IDF vectorization
-- Cosine similarity scoring
-- Keyword overlap detection
-- Match percentage output
-- Modular architecture for future ML upgrades
+This project provides a measurable similarity score and keyword overlap analysis to help quantify resume–job alignment.
 
 ---
 
-## 🧠 Tech Stack
+## Technical Approach
 
-- Python 3
-- NumPy
-- Pandas
-- scikit-learn
-- TF-IDF Vectorizer
-- Cosine Similarity
-- Git & GitHub
+1. Text preprocessing and normalization
+2. TF-IDF feature extraction
+3. Vector space transformation
+4. Cosine similarity computation
+5. Keyword overlap extraction
+
+Cosine similarity is computed as:
+
+Similarity(A, B) = (A · B) / (||A|| × ||B||)
 
 ---
 
-## 📂 Project Structure
+## Tech Stack
 
-```
+* Python 3
+* scikit-learn
+* NumPy
+* Pandas
+* TF-IDF Vectorization
+* Cosine Similarity
+
+---
+
+## Project Structure
 
 resume-matcher-ai/
 │
-├── app.py              # Main execution file
-├── matcher.py          # Core matching logic
-├── utils.py            # Helper functions
-├── requirements.txt    # Dependencies
-├── README.md           # Project documentation
-└── sample_data/        # Optional sample inputs
-
-````
+├── app.py
+├── matcher.py
+├── utils.py
+├── requirements.txt
+└── README.md
 
 ---
 
-## ⚙️ Installation
+## Installation
 
-### 1️⃣ Clone the repository
+Clone the repository:
 
-```bash
-git clone https://github.com/PercyLanda/resume-matcher-ai.git
+git clone [https://github.com/PercyLanda/resume-matcher-ai.git](https://github.com/PercyLanda/resume-matcher-ai.git)
 cd resume-matcher-ai
-````
 
-### 2️⃣ Create and activate virtual environment
+Create and activate a virtual environment:
 
-Mac/Linux:
-
-```bash
 python3 -m venv venv
 source venv/bin/activate
-```
 
-Windows:
+Install dependencies:
 
-```bash
-python -m venv venv
-venv\Scripts\activate
-```
-
-### 3️⃣ Install dependencies
-
-```bash
 pip install -r requirements.txt
-```
 
 ---
 
-## ▶️ Usage
+## Usage
 
 Run the application:
 
-```bash
 python app.py
-```
 
 Provide:
 
 * Resume text
 * Job description text
 
-The program outputs:
+The system outputs:
 
-* Match score percentage
+* Similarity score (percentage or decimal value)
 * Top overlapping keywords
 
 ---
 
-## 📊 Example Output
+## Example Output
 
-```
-Resume Match Score: 82%
+Resume Match Score: 0.82
 
-Top Matching Keywords:
-- SQL
-- Python
-- Machine Learning
-- Data Analysis
-- Tableau
-```
+Top Overlapping Terms:
+
+* python
+* sql
+* machine learning
+* data analysis
 
 ---
 
-## 🔍 How It Works
+## Future Enhancements
 
-1. Text preprocessing (lowercasing, cleaning)
-2. TF-IDF vectorization
-3. Feature space comparison
-4. Cosine similarity calculation
-5. Keyword overlap extraction
-
-Cosine similarity formula:
-
-Similarity = (A · B) / (||A|| × ||B||)
+* Transformer-based embeddings (e.g., SentenceTransformers)
+* Context-aware similarity scoring
+* Skill gap identification
+* Web-based interface (Streamlit or Flask)
+* ATS-style keyword weighting
 
 ---
 
-## 🎯 Future Improvements
-
-* Transformer-based embeddings (BERT / SentenceTransformers)
-* ATS keyword weighting
-* Resume keyword recommendation engine
-* Streamlit or Flask UI
-* Automated job scraping
-* OpenAI embedding integration
-* Skill gap detection module
-
----
-
-## 💼 Why This Project Matters
-
-This project demonstrates:
-
-* Applied NLP
-* Feature engineering
-* Similarity modeling
-* Practical machine learning integration
-* Real-world problem solving
-* Git workflow and version control
-
-It serves as a strong portfolio piece for roles in:
-
-* Data Analytics
-* Data Science
-* Machine Learning
-* AI Engineering
-* Applied NLP
-
----
-
-## 👤 Author
+## Author
 
 Percy Landa
 San Francisco Bay Area
-AI & Data Analytics Enthusiast
-
 GitHub: [https://github.com/PercyLanda](https://github.com/PercyLanda)
-
----
-
-## ⭐ License
-
-This project is for educational and portfolio purposes.
-
-````
-
----
-
-## 🚀 Next Step
-
-Now run:
-
-```bash
-git add README.md
-git commit -m "Add polished README"
-git push
-````
-
----
