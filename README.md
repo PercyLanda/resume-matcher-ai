@@ -48,6 +48,24 @@ By default, the app reads:
 - `data/raw/resume.txt`
 - `data/raw/job.txt`
 
+## Process
+
+1. Activate a virtual environment so dependencies stay isolated from system Python.
+2. Install required packages from `requirements.txt`.
+3. Install the spaCy English model (`en_core_web_sm`).
+4. Run `python src/main.py` to generate a match score and overlap terms.
+
+## What Each File Does
+
+- `src/main.py`: Entry point; loads input files, runs matching, and prints output.
+- `src/embedder.py`: Core scoring and keyword extraction logic.
+- `data/raw/resume.txt`: Resume input text.
+- `data/raw/job.txt`: Job description input text.
+- `tests/test_embedder.py`: Unit tests for matching and keyword logic.
+- `requirements.txt`: Project dependency list.
+- `README.md`: Setup, usage, and project documentation.
+- `.gitignore`: Excludes local environment and cache files from git.
+
 ## Testing
 
 ```bash
@@ -59,3 +77,10 @@ python -m unittest discover -s tests -v
 - No API/UI yet; this is a CLI prototype.
 - Skill matching uses a small static whitelist.
 - Inference needs model assets available locally (download on first run).
+
+## Author
+
+Author<br>
+Percy Landa<br>
+San Francisco Bay Area<br>
+GitHub: https://github.com/PercyLanda
