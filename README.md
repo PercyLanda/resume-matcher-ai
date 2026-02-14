@@ -1,5 +1,3 @@
----
-
 ```markdown
 # Resume Matcher AI
 
