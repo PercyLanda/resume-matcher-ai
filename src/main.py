@@ -1,5 +1,9 @@
 from pathlib import Path
-from embedder import ResumeMatcher
+
+try:
+    from src.embedder import ResumeMatcher
+except ModuleNotFoundError:
+    from embedder import ResumeMatcher
 
 
 def read_text_file(path: Path) -> str:
@@ -9,7 +13,6 @@ def read_text_file(path: Path) -> str:
 
 
 def main():
-    # Determine project root (parent of src/)
     project_root = Path(__file__).resolve().parents[1]
 
     resume_path = project_root / "data" / "raw" / "resume.txt"
@@ -18,7 +21,11 @@ def main():
     resume_text = read_text_file(resume_path)
     job_text = read_text_file(job_path)
 
-    matcher = ResumeMatcher()
+    try:
+        matcher = ResumeMatcher()
+    except RuntimeError as err:
+        print(f"Startup error: {err}")
+        return
 
     score = matcher.compute_similarity(resume_text, job_text)
     explanation = matcher.explain_match(resume_text, job_text)
@@ -51,4 +58,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

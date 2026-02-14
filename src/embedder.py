@@ -1,6 +1,4 @@
-from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
-import spacy
 
 
 # Generic filler words to ignore
@@ -30,11 +28,44 @@ SKILL_WHITELIST = {
 
 
 class ResumeMatcher:
-    def __init__(self, model_name="all-MiniLM-L6-v2"):
-        self.model = SentenceTransformer(model_name)
-        self.nlp = spacy.load("en_core_web_sm")
+    def __init__(self, model_name="all-MiniLM-L6-v2", model=None, nlp=None):
+        self.model = model or self._load_embedding_model(model_name)
+        self.nlp = nlp or self._load_spacy_pipeline()
 
-    # ✅ RESTORED similarity method
+    @staticmethod
+    def _load_embedding_model(model_name):
+        try:
+            from sentence_transformers import SentenceTransformer
+        except ImportError as exc:
+            raise RuntimeError(
+                "Missing dependency 'sentence-transformers'. Install requirements first."
+            ) from exc
+
+        try:
+            return SentenceTransformer(model_name)
+        except Exception as exc:
+            raise RuntimeError(
+                "Could not load sentence-transformer model. "
+                "Ensure internet access for first download, or use a locally cached model."
+            ) from exc
+
+    @staticmethod
+    def _load_spacy_pipeline():
+        try:
+            import spacy
+        except ImportError as exc:
+            raise RuntimeError(
+                "Missing dependency 'spacy'. Install requirements first."
+            ) from exc
+
+        try:
+            return spacy.load("en_core_web_sm")
+        except OSError as exc:
+            raise RuntimeError(
+                "spaCy model 'en_core_web_sm' is not installed. "
+                "Run: python -m spacy download en_core_web_sm"
+            ) from exc
+
     def compute_similarity(self, resume_text, job_text):
         embeddings = self.model.encode([resume_text, job_text])
         score = cosine_similarity([embeddings[0]], [embeddings[1]])
@@ -99,4 +130,3 @@ class ResumeMatcher:
             "common_skills": common_skills,
             "common_other": common_other
         }
-

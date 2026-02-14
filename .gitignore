@@ -3,10 +3,12 @@
 
 # Python virtual env
 venv/
+.venv/
 
 # Python cache
 __pycache__/
 *.pyc
+.pytest_cache/
 
 # Jupyter
 .ipynb_checkpoints/
@@ -15,4 +17,3 @@ __pycache__/
 models/*.pkl
 models/*.pt
 models/*.bin
-
