@@ -1,0 +1,23 @@
+Risk Analyst – Global Technology Platform (Contract)
+
+This Risk Analyst role focused on identifying, investigating, and mitigating platform and business risks that could negatively impact users, products, and operations within a large-scale technology ecosystem. The work involved both qualitative and quantitative analysis to understand emerging threats, policy gaps, enforcement inconsistencies, and broader risk trends affecting a global online platform.
+
+The role required monitoring current events and public affairs and applying contextual awareness to assess how external developments could impact digital products and user communities. Responsibilities included defining research parameters, conducting end-to-end investigations (from ideation through execution), and performing deep-dive analyses on content and behavioral datasets to uncover underlying risk patterns.
+
+Key Responsibilities
+
+* Analyzed structured and unstructured data using SQL, dashboards, and reporting tools to identify recurring themes and key risk drivers.
+* Conducted qualitative and quantitative assessments of sensitive or policy-violating content, including potentially offensive or controversial material.
+* Produced postmortem analyses to identify process gaps and recommend operational improvements.
+* Developed queries and delivered insights, reports, and data visualizations to inform updates to product features, policies, protocols, and internal tooling.
+* Partnered cross-functionally with Product, Policy, Operations, and Program teams to translate investigative findings into actionable strategies.
+* Served as a user advocate by surfacing persistent themes and systemic risks impacting community safety and business integrity.
+
+Skills & Environment
+
+* Advanced SQL and data analysis
+* Risk investigation & trend analysis
+* Trust & Safety / Content Policy operations
+* Cross-functional stakeholder communication
+* Experience reviewing sensitive content
+

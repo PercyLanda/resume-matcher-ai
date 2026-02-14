@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# Python virtual env
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model artifacts (optional)
+models/*.pkl
+models/*.pt
+models/*.bin
+

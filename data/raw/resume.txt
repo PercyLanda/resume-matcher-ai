@@ -1,0 +1,63 @@
+SUMMARY
+
+Risk Analyst with 2+ years of experience supporting global-scale social media platforms, identifying and investigating platform, policy, and business risks across complex digital ecosystems. Strong background in Trust & Safety operations, SQL-based data analysis, risk trend reporting, and cross-functional collaboration with Product, Policy, Engineering, and Operations teams. Experienced reviewing sensitive content and translating complex risk signals into actionable recommendations that improve enforcement quality, detection workflows, and platform integrity. Fully bilingual in English and Spanish.
+
+CORE COMPETENCIES
+
+* Platform Risk Investigation & Trend Analysis
+* Trust & Safety / Content Policy Operations
+* SQL (Presto, Athena, MySQL, Oracle)
+* Risk Reporting & Dashboarding (Tableau, Excel)
+* Sensitive Content Review & Escalations
+* Cross-Functional Stakeholder Collaboration
+* Risk Workflow Testing & Validation
+* Data Quality & Risk Signal Documentation
+
+PROFESSIONAL EXPERIENCE
+
+Global Social Media Platform — Risk Analyst (Contract)
+Remote / Hybrid
+Multiple contract engagements
+
+* Investigated platform and business risks across large-scale consumer products, analyzing high-risk behaviors, enforcement gaps, and emerging policy violations.
+* Queried large datasets using SQL (Presto) to identify trends, anomalies, near-miss incidents, and systemic risk patterns for recurring risk reviews.
+* Reviewed sensitive and policy-violating content to ensure accurate enforcement decisions and policy consistency across global operations.
+* Partnered cross-functionally with Product, Policy, Engineering, and Operations teams to translate risk findings into scalable process and workflow improvements.
+* Tested and validated new risk detection and content review workflows prior to broad deployment, ensuring operational readiness and enforcement quality.
+* Labeled and validated datasets supporting automated detection systems to improve signal precision and reduce false positives.
+* Produced structured reporting and executive-ready summaries to support strategic risk mitigation decisions.
+
+CRM & Enterprise Data Consulting Firm — Salesforce Data Analyst (Contract)
+Remote
+
+* Conducted SQL-based data validation and reconciliation across multi-source enterprise datasets.
+* Identified data inconsistencies and quality issues impacting downstream reporting and business operations.
+* Developed dashboards and documentation to improve stakeholder visibility into data integrity risks.
+
+Global Technology Company — Real Estate Data Analyst (Contract)
+California
+
+* Extracted and analyzed enterprise data using Oracle SQL to support governance and reporting initiatives.
+* Built structured documentation (data dictionary, metadata mapping) improving data reliability and transparency.
+* Automated recurring reporting workflows, reducing manual processing time by ~50%.
+
+Earlier Career
+Financial Analyst — Fortune 500 Technology Company (3+ years)
+Additional experience in regulated industries (banking, real estate, contracting), strengthening compliance awareness, financial controls, and documentation rigor.
+
+TECHNICAL SKILLS
+* SQL (Presto, Athena, MySQL, Oracle)
+* Excel (Advanced formulas, pivot tables, automation)
+* Tableau (Dashboard reporting)
+* Python (Pandas for analysis; foundational ML exposure)
+* Data Documentation & Risk Workflow Mapping
+
+EDUCATION & TRAINING
+B.S. Business / Finance
+
+Certifications & Advanced Training:
+* Data Science & Analytics — University Extension Program
+* Database Engineering — Professional Certificate
+* Machine Learning Engineering for Production (MLOps)
+* Machine Learning Specialization
+* Data Science Professional Certificate
